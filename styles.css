@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/dungeon_door.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; /* Text color */
+    background-color: #DAA520;; /* Background color */
+    padding: 10px 20px; /* Add padding to create a background effect */
+    border-radius: 5px; /* Rounded corners for the background */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.choices {
+    /* Apply medieval shield styles to buttons */
+    background-color: #8B4513; /* Brown */
+    border: 2px solid #DAA520; /* Gold */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.choice {
+    /* Apply medieval button styles */
+    background-color: #CD853F; /* Peruvian Brown */
+    color: #fff;
+    border: 2px solid #DAA520; /* Gold */
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.icon-background-white {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0.2;
+}
+
+.icon-background-color {
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0.2;
+}
+
+
+.scoreboard {
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+}
+
+.scoreboard p {
+    font-size: 1em;
+    color: #333;
+}
+
+#player-score,
+#computer-score {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+#computer-choice {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#winner {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #DAA520;
+}
+
+#reset-button {
+    background-color: #CD853F; /* Brown */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#reset-button:hover {
+    background-color: #DAA520; /* light gold on hover */
+}
